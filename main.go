@@ -1,11 +1,15 @@
 package main
 
-import "github.com/kidmodo/qresist/gen/go/sample"
 import (
     "context"
     "log"
     "net"
+
     "google.golang.org/grpc"
+
+    // Import from the `sample` package
+    "github.com/kidmodo/qresist/sample"
+
 )
 
 type server struct {
