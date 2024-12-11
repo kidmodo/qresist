@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package sample;
+
+option go_package = "github.com/kidmodo/qresist/gen/go/sample";
+
+message SampleMessage {
+    string name = 1;
+    int32 id = 2;
+}
+
+service SampleService {
+    rpc GetSample(SampleMessage) returns (SampleMessage);
+}
